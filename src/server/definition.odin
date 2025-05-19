@@ -29,7 +29,7 @@ get_all_package_file_locations :: proc(
 		}
 	}
 
-	matches, err := filepath.glob(fmt.tprintf("%v/{*.odin,**/_*.odin}", path), context.temp_allocator)
+	matches, _ := odin_files_glob(path)
 
 	for match in matches {
 		uri := common.create_uri(match, context.temp_allocator)

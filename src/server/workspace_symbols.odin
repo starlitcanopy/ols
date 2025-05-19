@@ -41,7 +41,7 @@ get_workspace_symbols :: proc(query: string) -> (workspace_symbols: []WorkspaceS
 	log.error(pkgs)
 
 	_pkg: for pkg in pkgs {
-		matches, err := filepath.glob(fmt.tprintf("%v/{*.odin,**/_*.odin}", pkg), context.temp_allocator)
+		matches, _ := odin_files_glob(pkg)
 
 		if len(matches) == 0 {
 			continue
