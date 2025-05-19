@@ -95,7 +95,7 @@ try_build_package :: proc(pkg_name: string) {
 		return
 	}
 
-	matches, err := filepath.glob(fmt.tprintf("%v/*.odin", pkg_name), context.temp_allocator)
+	matches, err := filepath.glob(fmt.tprintf("%v/{*.odin,**/_*.odin}", pkg_name), context.temp_allocator)
 
 	if err != .None {
 		log.errorf("Failed to glob %v for indexing package", pkg_name)
