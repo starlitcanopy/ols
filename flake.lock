@@ -74,11 +74,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1753348541,
-        "narHash": "sha256-bfKslrmwKUvv4LiBRDXLEbAKawlNyD7n8Y+1LjkrBJQ=",
+        "lastModified": 1753381840,
+        "narHash": "sha256-mslqTqXN+LEn8noQeX+v+aUErK66U08STXvgtKP2zJg=",
         "owner": "starlitcanopy",
         "repo": "odin",
-        "rev": "632d814a6e17113c692c3f54cc26b704f9143746",
+        "rev": "ebc9cbfea98f60fe41143246790066df4d5eea8d",
         "type": "github"
       },
       "original": {

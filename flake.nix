@@ -41,8 +41,8 @@
           postPatch = ''
             substituteInPlace build.sh \
               --replace-fail \
-                'version="$(git describe --tags --abbrev=7)"' \
-                'version="${version}"'
+                "VERSION=\"dev-\$(date -u '+%Y-%m-%d')-\$(git rev-parse --short HEAD)\"" \
+                "VERSION='${version}'"
             ${og.postPatch}
           '';
 
